@@ -3,7 +3,6 @@ import './App.css'
 
 const App = () => {
   const [resul, setResul] = useState('');
-  
   const resultado=(e)=>{
     setResul(resul + e.target.value);
   }
@@ -11,6 +10,9 @@ const App = () => {
   const borrar=()=>{
     setResul('');
   }
+
+
+  
   return (
     <section className='fondo'>
       <div className='cajaCalcu'>
