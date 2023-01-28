@@ -5,13 +5,33 @@ const App = () => {
   const [resul, setResul] = useState('');
   const resultado=(e)=>{
     setResul(resul + e.target.value);
+    if(e.target.value === 'C'){
+      setResul('');
+    }
   }
 
-  const borrar=()=>{
-    setResul('');
-  }
+  const botones=[
+    {valor: 'C'},
+    {valor: '+-'},
+    {valor: '%'},
+    {valor: '+'},
+    {valor: 1},
+    {valor: 2},
+    {valor: 3},
+    {valor: '-'},
+    {valor: 4},
+    {valor: 5},
+    {valor: 6},
+    {valor: 'X'},
+    {valor: 7},
+    {valor: 8},
+    {valor: 9},
+    {valor: '/'},
+    {valor: 0},
+    {valor: '.'},
 
 
+  ]
   
   return (
     <section className='fondo'>
@@ -21,26 +41,11 @@ const App = () => {
           <input  className='resul' value={resul}/>
         </div>
         <div className='cajaItem'>
-          <button onClick={borrar} className='item'>C</button>
-          <button onClick={resultado} className='item'>+-</button>
-          <button onClick={resultado} className='item'>%</button>
-          <button onClick={resultado} className='item'>+</button>
-          <button onClick={resultado} className='item' value={1}>1</button>
-          <button onClick={resultado} className='item' value={2}>2</button>
-          <button onClick={resultado} className='item' value={3}>3</button>
-          <button onClick={resultado} className='item'>-</button>
-          <button onClick={resultado} className='item' value={4}>4</button>
-          <button onClick={resultado} className='item' value={5}>5</button>
-          <button onClick={resultado} className='item' value={6}>6</button>
-          <button onClick={resultado} className='item'>X</button>
-          <button onClick={resultado} className='item' value={7}>7</button>
-          <button onClick={resultado} className='item' value={8}>8</button>
-          <button onClick={resultado} className='item' value={9}>9</button>
-          <button onClick={resultado} className='item'>/</button>
-          <button onClick={resultado} className='item' value={0}>0</button>
-          <button onClick={resultado} className='item'>.</button>
-          <button onClick={resultado} className='item'>=</button>
-          <button onClick={resultado} className='item'>🌙</button>
+          
+          {botones.map(elemento=>(
+            <button onClick={resultado} value={elemento.valor} className='item'>{elemento.valor}</button>
+          ))}
+          <button onClick={resultado} className='btnIgual'>=</button>
         </div>
       </div>
     </section>

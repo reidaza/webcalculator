@@ -44,3 +44,7 @@
   line-height: 60px;
   font-size: 2rem;
 }
+
+.btnIgual{
+  grid-column: 3/5;
+}
