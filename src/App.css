@@ -1,36 +1,48 @@
+:root{
+  background-color: #238F85;
+}
 
 .cajaCalcu{
   width: 360px;
-  height: 500px;
+  height: 600px;
   margin-left: 150px;
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow:  10px 5px 5px #1F8279;
 }
 
 .cajaResul{
-  background-color: #F5F5F5;
-  border: 1px solid grey;
-}
-
-.historial{
-  margin-top: 50px;
-  width: 85%;
-  text-align: right;
-  font-size: 2rem;
+  background-color: #FFFFFF;
   border: none;
-  background-color: #F5F5F5;
-  color: #27A99C;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
 }
 
+.cajaresulDark{
+  background-color: #000807;
+  color: #FFFFFF;
+  border: none;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
 .resul{
   border: none;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   margin-top: 10px;
   text-align: right;
   width: 95%;
   font-size: 2rem;
 }
 
+.resulDark{
+  border: none;
+  background-color: #000807;
+  color: #FFFFFF;
+  margin-top: 10px;
+  text-align: right;
+  width: 95%;
+  font-size: 2rem;
+}
 .cajaItem{
   height: 70%;
   display: grid;
@@ -38,13 +50,80 @@
 }
 
 .item{
-  border: 1px solid grey;
-  background-color: #E3E3E3;
+  border: 1px solid #D8D8D8;
+  background-color: #E8E8E8;
   text-align: center;
   line-height: 60px;
   font-size: 2rem;
 }
 
+.cero{
+  border: 1px solid #D8D8D8;
+  background-color: #E8E8E8;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  border-end-start-radius: 8px;
+}
+.Darkcero{
+  border: 1px solid #020607;
+  background-color: #040D0F;
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  border-end-start-radius: 8px;
+}
+.operacion{
+  border: 1px solid #D8D8D8;
+  background-color: #BEEAE6;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
+.operacionDark{
+  border: 1px solid #020607;
+  background-color: #0B3E41;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
 .btnIgual{
   grid-column: 3/5;
+  border: none;
+  background-color: #25988D;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  border-end-end-radius: 8px;
+  box-shadow:  10px 5px 5px #1F8279;
+}
+.btnclear{
+  grid-column: 1/2;
+  border: 1px solid #020607;
+  background-color: #040D0F;
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
+
+.btntema{
+  border: 1px solid #D8D8D8;
+  background-color: #E8E8E8;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+}
+
+
+.temaDark{
+  border: 1px solid #020607;
+  background-color: #040D0F;
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
 }
